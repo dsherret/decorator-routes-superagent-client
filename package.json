@@ -1,0 +1,32 @@
+{
+  "name": "decorator-routes-superagent-client",
+  "version": "0.0.1",
+  "description": "0.0.1",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "mocha --recursive dist/tests",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsherret/decorator-routes-superagent-client.git"
+  },
+  "keywords": [
+    "decorators",
+    "typescript",
+    "routes"
+  ],
+  "author": "David Sherret",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dsherret/decorator-routes-superagent-client/issues"
+  },
+  "homepage": "https://github.com/dsherret/decorator-routes-superagent-client#readme",
+  "typescript": {
+      "definition": "decorator-routes-superagent-client.d.ts"
+  },
+  "dependencies": {
+    "decorator-routes-base-client": "https://github.com/dsherret/decorator-routes-base-client.git",
+    "superagent": "^1.4.0"
+  }
+}
