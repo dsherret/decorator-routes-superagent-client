@@ -8,6 +8,6 @@ declare module "decorator-routes-superagent-client" {
         protected baseUrl: string;
         constructor(baseUrl: string);
         protected get<ReturnType>(url: string, args?: Object): Promise<ReturnType>;
-        protected post<SendType, ReturnType>(url: string, sendObj: SendType, args?: Object): Promise<ReturnType>;
+        protected post<ReturnType>(url: string, sendObj: any, args?: Object): Promise<ReturnType>;
     }
 }

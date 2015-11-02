@@ -24,7 +24,7 @@ export class ClientBase extends BaseClient.BaseClient {
         });
     }
 
-    protected post<SendType, ReturnType>(url: string, sendObj: SendType, args: Object = null) {
+    protected post<ReturnType>(url: string, sendObj: any, args: Object = null) {
         const req = request.post(this.baseUrl + url);
 
         if (args != null) {
