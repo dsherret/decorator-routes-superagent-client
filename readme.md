@@ -1,4 +1,4 @@
-decorator-routes-superagent-client
+server-bridge-superagent-client
 ==================================
 
-A decorator-routes client implementation for superagent.
+A [server-bridge](https://github.com/dsherret/server-bridge) client implementation for superagent.

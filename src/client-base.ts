@@ -1,5 +1,5 @@
 import * as request from "superagent";
-import * as BaseClient from "decorator-routes-base-client";
+import * as BaseClient from "server-bridge-base-client";
 
 export class ClientBase extends BaseClient.BaseClient {
     constructor(protected baseUrl: string) {

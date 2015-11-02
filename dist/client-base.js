@@ -4,7 +4,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var request = require("superagent");
-var BaseClient = require("decorator-routes-base-client");
+var BaseClient = require("server-bridge-base-client");
 var ClientBase = (function (_super) {
     __extends(ClientBase, _super);
     function ClientBase(baseUrl) {

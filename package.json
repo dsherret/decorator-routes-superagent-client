@@ -1,7 +1,7 @@
 {
-  "name": "decorator-routes-superagent-client",
+  "name": "server-bridge-superagent-client",
   "version": "0.1.0",
-  "description": "A decorator-routes client implementation for superagent.",
+  "description": "A server-bridge client implementation for superagent.",
   "main": "dist/main.js",
   "scripts": {
     "test": "mocha --recursive dist/tests",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dsherret/decorator-routes-superagent-client.git"
+    "url": "git+https://github.com/dsherret/server-bridge-superagent-client.git"
   },
   "keywords": [
     "decorators",
@@ -19,14 +19,14 @@
   "author": "David Sherret",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dsherret/decorator-routes-superagent-client/issues"
+    "url": "https://github.com/dsherret/server-bridge-superagent-client/issues"
   },
-  "homepage": "https://github.com/dsherret/decorator-routes-superagent-client#readme",
+  "homepage": "https://github.com/dsherret/server-bridge-superagent-client#readme",
   "typescript": {
-      "definition": "decorator-routes-superagent-client.d.ts"
+      "definition": "server-bridge-superagent-client.d.ts"
   },
   "dependencies": {
-    "decorator-routes-base-client": "0.1.0",
+    "server-bridge-base-client": "0.1.0",
     "superagent": "^1.4.0"
   }
 }
