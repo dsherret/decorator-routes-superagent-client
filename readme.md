@@ -1,4 +1,4 @@
 decorator-routes-superagent-client
 ==================================
 
-A client implementation for superagent.
+A decorator-routes client implementation for superagent.

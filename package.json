@@ -1,7 +1,7 @@
 {
   "name": "decorator-routes-superagent-client",
-  "version": "0.0.1",
-  "description": "0.0.1",
+  "version": "0.1.0",
+  "description": "A decorator-routes client implementation for superagent.",
   "main": "dist/main.js",
   "scripts": {
     "test": "mocha --recursive dist/tests",
@@ -26,7 +26,7 @@
       "definition": "decorator-routes-superagent-client.d.ts"
   },
   "dependencies": {
-    "decorator-routes-base-client": "https://github.com/dsherret/decorator-routes-base-client.git",
+    "decorator-routes-base-client": "0.1.0",
     "superagent": "^1.4.0"
   }
 }
