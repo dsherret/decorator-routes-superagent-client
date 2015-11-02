@@ -17,6 +17,7 @@ export class ClientBase extends BaseClient.BaseClient {
             req.end((err: any, res: request.Response) => {
                 if (err) {
                     reject(err);
+                    return;
                 }
 
                 resolve(res.body as ReturnType);
@@ -31,12 +32,16 @@ export class ClientBase extends BaseClient.BaseClient {
             req.query(args);
         }
 
+        // todo: change this to allow the user to insert their own configuration while generating the code
+        req.type("json");
+        req.set("Content-Type", "application/json");
         req.send(sendObj);
 
         return new Promise<ReturnType>((resolve, reject) => {
             req.end((err: any, res: request.Response) => {
                 if (err) {
                     reject(err);
+                    return;
                 }
 
                 resolve(res.body as ReturnType);

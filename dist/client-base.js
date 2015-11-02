@@ -21,6 +21,7 @@ var ClientBase = (function (_super) {
             req.end(function (err, res) {
                 if (err) {
                     reject(err);
+                    return;
                 }
                 resolve(res.body);
             });
@@ -32,11 +33,14 @@ var ClientBase = (function (_super) {
         if (args != null) {
             req.query(args);
         }
+        req.type("json");
+        req.set("Content-Type", "application/json");
         req.send(sendObj);
         return new Promise(function (resolve, reject) {
             req.end(function (err, res) {
                 if (err) {
                     reject(err);
+                    return;
                 }
                 resolve(res.body);
             });
