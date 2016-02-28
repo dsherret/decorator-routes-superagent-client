@@ -1,7 +1,5 @@
 declare module "server-bridge-superagent-client" {
-    import * as BaseClient from "server-bridge-base-client";
-
-    export class ClientBase extends BaseClient.BaseClient {
+    export class ClientBase {
         protected baseUrl: string;
         constructor(baseUrl: string);
         protected get<ReturnType>(url: string, args?: Object): Promise<ReturnType>;
