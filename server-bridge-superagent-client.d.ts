@@ -1,5 +1,3 @@
-/// <reference path="node_modules/server-bridge-base-client/server-bridge-base-client.d.ts" />
-
 declare module "server-bridge-superagent-client" {
     import * as BaseClient from "server-bridge-base-client";
 
