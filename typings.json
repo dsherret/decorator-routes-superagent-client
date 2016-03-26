@@ -1,0 +1,13 @@
+{
+  "name": "server-bridge-superagent-client",
+  "version": false,
+  "main": "server-bridge-superagent-client.d.ts",
+  "ambientDependencies": {
+    "es6-promise": "github:DefinitelyTyped/DefinitelyTyped/es6-promise/es6-promise.d.ts#a59efa21a25762f86bef315be08f2d8b0385e210",
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#eb59a40d3c2f3257e34ec2ede181046230814a41",
+    "superagent": "github:DefinitelyTyped/DefinitelyTyped/superagent/superagent.d.ts#eb59a40d3c2f3257e34ec2ede181046230814a41"
+  },
+  "dependencies": {
+    "server-bridge-base-client": "github:dsherret/server-bridge-base-client#404f3f7a3993fae3a8da0518ff738e2f096a91a0"
+  }
+}
