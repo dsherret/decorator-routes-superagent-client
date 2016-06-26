@@ -1,6 +1,6 @@
 {
   "name": "server-bridge-superagent-client",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A server-bridge client implementation for superagent.",
   "main": "dist/main.js",
   "typings": "server-bridge-superagent-client.d.ts",

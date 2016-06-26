@@ -13,16 +13,7 @@ export class ClientBase extends BaseClient.BaseClient {
             req.query(args);
         }
 
-        return new Promise<ReturnType>((resolve, reject) => {
-            req.end((err: any, res: request.Response) => {
-                if (err) {
-                    reject(err);
-                    return;
-                }
-
-                resolve(res.body as ReturnType);
-            });
-        });
+        return this.sendRequest<ReturnType>(req);
     }
 
     protected post<ReturnType>(url: string, sendObj: any, args: Object = null) {
@@ -37,6 +28,10 @@ export class ClientBase extends BaseClient.BaseClient {
         req.set("Content-Type", "application/json");
         req.send(sendObj);
 
+        return this.sendRequest<ReturnType>(req);
+    }
+
+    private sendRequest<ReturnType>(req: request.SuperAgentRequest) {
         return new Promise<ReturnType>((resolve, reject) => {
             req.end((err: any, res: request.Response) => {
                 if (err) {

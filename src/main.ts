@@ -1,1 +1,1 @@
-export {ClientBase} from "./client-base";
+export {ClientBase} from "./ClientBase";
