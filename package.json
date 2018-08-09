@@ -1,6 +1,6 @@
 {
   "name": "server-bridge-superagent-client",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A server-bridge client implementation for superagent.",
   "main": "dist/main.js",
   "typings": "server-bridge-superagent-client.d.ts",
@@ -25,6 +25,9 @@
   "homepage": "https://github.com/dsherret/server-bridge-superagent-client#readme",
   "dependencies": {
     "server-bridge-base-client": "1.1.0",
-    "superagent": "^1.4.0"
+    "superagent": "^3.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^2.0.8"
   }
 }
